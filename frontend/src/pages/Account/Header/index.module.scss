@@ -1,0 +1,137 @@
+/* index.module.scss */
+
+.headerAccount {
+    background-color: #121212;
+    height: 320px;
+    position: relative;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background-image: url("https://cdn.discordapp.com/attachments/1134304468532461630/1134988844782075974/5.png");
+    overflow: hidden;
+}
+
+.headerAccount::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(transparent, rgba(18, 18, 18, 0.911));
+    filter: blur(10px);
+    /* Ajustez la valeur du flou selon vos préférences */
+}
+
+.headerAccountInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 18%;
+    margin: 0 30px;
+    position: relative;
+}
+
+.headerAccountInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 18%;
+    margin: 0 30px;
+    position: relative;
+}
+
+.headerAccountInfoLeft {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.headerAccountInfoLeftAvatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.headerAccountInfoLeftName {
+    h1 {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 5px;
+    }
+
+    h2 {
+        font-size: 18px;
+        color: #ccc;
+    }
+}
+
+.headerAccountInfoRight {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.headerAccountInfoRightStats {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+
+    .headerAccountInfoRightStatsItem {
+        text-align: center;
+        margin-right: 20px;
+
+        h1 {
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #ccc;
+        }
+    }
+}
+
+.headerAccountInfoRightButtons {
+    display: flex;
+    align-items: center;
+
+    .headerAccountInfoRightButtonsFollow,
+    .headerAccountInfoRightButtonsMessage {
+        background-color: #4512bd;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        margin-right: 10px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #381093;
+        }
+    }
+
+    .headerAccountInfoRightButtonsMessage {
+        background-color: #333;
+
+        &:hover {
+            background-color: #2c2c2c;
+        }
+    }
+}
