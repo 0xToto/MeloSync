@@ -1,0 +1,36 @@
+/* Button.module.scss */
+
+.button {
+    // display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4512BD;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    height: 100%;
+  
+    &:hover {
+      background-color: #330f88;
+    }
+  
+    .logo {
+      margin-right: 10px;
+      width: 24px;
+      height: 24px;
+  
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  
+    .text {
+    }
+  }
+  
