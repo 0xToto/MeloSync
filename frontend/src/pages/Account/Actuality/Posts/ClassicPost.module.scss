@@ -1,0 +1,67 @@
+/* ClassicPost.module.scss */
+
+.classicPost {
+  background-color: #121212;
+  border-radius: 10px;
+  padding: 10px;
+
+  .postHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .profilePicture {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .authorInfo {
+      display: flex;
+      flex-direction: row; /* Aligner l'icône vérifiée à côté du pseudo */
+      align-items: center;
+      font-size: 14px;
+      color: #fff;
+      gap: 0.4rem;
+
+      .authorName {
+        font-weight: bold;
+        font-size: 18px;
+        margin-right: 5px; /* Espace entre le pseudo et l'icône vérifiée */
+      }
+
+      .verifiedIcon {
+        width: 16px;
+        height: 16px;
+        margin-right: 5px; /* Espace entre le pseudo et l'icône vérifiée */
+      }
+    }
+  }
+
+  .postImage {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    display: flex;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+    padding: 0.5rem;
+  }
+
+  .reactions {
+    display: flex;
+
+    .reactionButton {
+      margin-right: 10px;
+    }
+  }
+}
