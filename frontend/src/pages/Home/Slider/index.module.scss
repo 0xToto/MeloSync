@@ -1,0 +1,30 @@
+/* ImageSlider.module.scss */
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.slideVisible {
+  flex: 0 0 100%;
+  opacity: 1;
+  transition: opacity 5s ease;
+}
+
+.slideHidden {
+  flex: 0 0 100%;
+  opacity: 0;
+  transition: opacity 5s ease;
+  position: absolute;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
