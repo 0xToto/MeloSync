@@ -1,0 +1,56 @@
+/* music-downloader.css */
+
+.music-downloader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #212121;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+  /* Transition pour la hauteur */
+  transition: height 0.3s ease;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+/* Styles pour les inputs */
+.input-container input {
+  padding: 8px;
+  border: 1px solid #121212;
+  background-color: #121212;
+  border-radius: 4px;
+  // margin-bottom: 8px;
+  margin: 0 2rem 0.5rem 2rem;
+  color: #fff;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* Styles pour le bouton */
+.button-container button {
+  padding: 12px 20px;
+  background-color: #4512bd;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button-container button:disabled {
+  background-color: #26076d;
+  cursor: not-allowed;
+}
+
+/* Styles pour l'état déroulé */
+.music-downloader-container.expanded {
+  height: 200px; /* Ajustez cette valeur en fonction de la hauteur souhaitée */
+}
