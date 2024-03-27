@@ -1,0 +1,116 @@
+/* Home.module.css */
+
+.container {
+    display: flex;
+    height: calc(100vh - 150px); /* Ajustement de la hauteur pour tenir compte de la section inférieure */
+  }
+  
+  .leftSection {
+    flex: 1;
+    padding: 5px;
+    background-color: #212121;
+    border-radius: 10px;
+    margin: 0.5rem;
+    // overflow-y: auto; /* Activation du défilement vertical si nécessaire */
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .centerSection {
+    flex: 3;
+    padding: 5px;
+    background-color: #212121;
+    border-radius: 10px;
+    margin: 0.5rem 0.1rem;
+    gap: 5rem;
+  }
+  
+  .rightSection {
+    flex: 0.5;
+    padding: 5px;
+    background-color: #212121;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+  
+  .link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .bottomSection {
+    height: 50px;
+    background-color: #212121;
+    border-radius: 10px;
+  }
+  
+  .home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    overflow: hidden; /* Empêche l'affichage de la barre de défilement */
+    position: relative; /* Ajouter une position relative pour le voile sombre */
+  }
+  
+  /* Ajout de Media Queries pour le rendu responsive */
+  
+  /* ... (les Media Queries restantes restent inchangées) */
+  
+  /* Styles pour le voile sombre */
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    pointer-events: none;
+    /* Ajouter des transitions pour une apparence douce du voile sombre */
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  
+  /* Appliquer une opacité de 0 au voile sombre lorsqu'il n'est pas en cours de chargement */
+  .home:not(.isLoading) .overlay {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  /* Styles pour les transitions de zones pendant la présentation */
+  
+  .loadingStep {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    /* Ajouter des transitions pour une apparence douce lors du changement de zone */
+    transition: opacity 0.5s ease;
+  }
+  
+  /* Appliquer une opacité de 1 à la zone active */
+  .home .loadingStep.activeStep {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .stepDescription {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    pointer-events: none;
+  }
+  
