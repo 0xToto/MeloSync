@@ -1,0 +1,49 @@
+/* Menu.module.css */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #121212;
+  border-radius: 10px;
+  // padding: 10px 20px;
+  margin-bottom: 0.5rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  // background-color: #121212;
+  background-color: transparent;
+  color: #333;
+  font-size: 16px;
+  height: 50px;
+  width: auto;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: color 0.3s ease;
+}
+
+.text:hover {
+  color: white; /* Changement de couleur au survol */
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  margin-left: 16px;
+  margin-right: 8px;
+}
+
+.text {
+  flex: 1;
+  text-align: center;
+  color: #b3b3b3;
+  margin-right: 10px; /* Réduction de l'espace entre l'icône et le texte */
+}
+
+/* Vous pouvez ajouter plus de styles selon vos besoins pour personnaliser davantage le menu */
