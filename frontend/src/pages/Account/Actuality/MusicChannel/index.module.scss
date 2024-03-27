@@ -1,0 +1,43 @@
+.musicChannel {
+    background-color: #121212;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
+    button {
+      margin-top: 10px;
+      background-color: #4512BD;
+      border-radius: 15px;
+      border: none;
+      color: white;
+      font-size: 18px;
+      padding: 15px; 
+      transition-duration: .3s;
+    }
+
+    button:hover {
+      background-color: #330f88;
+      transition-duration: 0.5s; 
+    }
+  
+    h2 {
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 5px;
+    }
+  
+    .currentTrack {
+      margin-top: 10px;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+    }
+  }
+  
