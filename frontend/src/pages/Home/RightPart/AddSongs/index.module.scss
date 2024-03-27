@@ -1,0 +1,63 @@
+
+
+.buttonContainer {
+    position: relative;
+    background-color: #121212;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    margin: 0.1rem;
+  }
+  
+  .mainButton {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .dropdownContent {
+    position: relative;
+    top: 100%;
+    left: 0;
+    background-color: #121212;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.375rem; /* Utilisez le même border-radius que le .buttonContainer */
+    padding: 1rem;
+    z-index: 1;
+  }
+  
+  /* Optional styles for better appearance */
+  .dropdownContent p {
+    margin: 8px 0;
+  }
+  
+  .dropdownContent button {
+    margin: 8px 0;
+  }
+  
