@@ -1,0 +1,39 @@
+// UserMenu.module.scss
+
+.userMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.1rem;
+    background-color: #121212;
+    border-radius: 0.375rem;
+    padding: 1rem;
+  }
+  
+  .buttonContainer {
+    margin-right: 15px;
+  
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  .menuButton {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    transition: color 0.3s;
+  
+    img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+  
+    &:hover {
+      color: #4512bd;
+    }
+  }
+  
