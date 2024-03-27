@@ -1,0 +1,23 @@
+/* ReactionButton.module.scss */
+.reactionButton {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.reactionIcon {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.reactionCount {
+  font-size: 16px;
+  color: #ccc;
+}
