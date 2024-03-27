@@ -1,0 +1,130 @@
+/* index.module.scss */
+
+.playlistContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.2rem;
+  overflow: auto;
+  scrollbar-width: none; /* Masque la barre de défilement de Firefox */
+  -ms-overflow-style: none; /* Masque la barre de défilement d'Internet Explorer et Edge */
+  background-color: #121212;
+  border-radius: 10px;
+  padding: 5px;
+  height: 470px;
+}
+
+/* Pour Chrome et Safari */
+.playlistContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.playlistButton {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #121212;
+  color: #fff;
+  font-size: 16px;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Ajout d'une transition pour l'effet au survol */
+}
+
+.playlistImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+.playlistText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.playlistTitle {
+  font-size: 1rem;
+  color: white;
+}
+
+.playlistSubtitle {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.sortButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.sortButton {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  height: 40px;
+  width: 200px;
+  font-size: 16px;
+}
+
+.sortButton:hover {
+  background-color: #4512bd;
+}
+
+.playlistButton:hover {
+  background-color: #4512bd;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #121212;
+  padding: 10px 0;
+}
+
+.deleteIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  background: transparent; /* Fond transparent */
+  border: none;
+  cursor: pointer;
+  /* Définir la taille de l'icône cross */
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+}
+
+.deleteIcon img {
+  /* Pour ajuster la taille de l'image cross */
+  width: 100%;
+  height: 100%;
+}
+
+.deleteIcon:hover {
+  /* Couleur de l'icône cross au survol */
+  filter: invert(25%) sepia(92%) saturate(1555%) hue-rotate(309deg) brightness(100%) contrast(89%);
+}
+
+.playlistItem {
+  display: flex;
+  align-items: center;
+  background-color: #121212;
+  
+}
